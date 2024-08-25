@@ -1,0 +1,21 @@
+security:
+    basic:
+        enable: false
+    ignored: /user
+server:
+    port: 8090
+    servlet:
+        context-path: /user
+spring:
+    application:
+        name: invcd-main
+    datasource:
+        password: root
+        url: jdbc:postgresql://localhost:5555/postgres?currentSchema=posschema
+        username: postgres
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
